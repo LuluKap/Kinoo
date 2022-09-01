@@ -2,6 +2,8 @@
 import * as React from "react";
 
 import { Routes, Route, Link } from "react-router-dom";
+import Landing from "./pages/home/Landing";
+
 
 function App() {
     return (
@@ -9,7 +11,8 @@ function App() {
         //    <Button>Testing</Button>
         // </div>
         <div className="App">
-        <h1>Welcome to React Router!</h1>
+          <Landing />
+        {/* <h1>Welcome to React Router!</h1> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
@@ -21,10 +24,10 @@ function App() {
 function Home() {
     return (
       <>
-        <main>
+        {/* <main>
           <h2>Welcome to the homepage!</h2>
           <p>You can do this, I believe in you.</p>
-        </main>
+        </main> */}
         <nav>
           <Link to="/about">About</Link>
         </nav>
